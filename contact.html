@@ -27,7 +27,10 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
+
+  <!-- Javascript Firebase Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
 </head>
 
 <body>
@@ -85,21 +88,21 @@
                 <div class="info-box">
                   <i class="bx bx-map"></i>
                   <h3>Our Address</h3>
-                  <p>23/B Mahalaxmi CHS, NewRenuka Nagar, Kandiwali West, Mumbai 400067</p>
+                  <p>23-B, Mahalaxmi CHS, Renuka Nagar, Near IBIS Tower, New Link Road, Kandivali West, Mumbai 400067</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
+                  <p>&nbsp; <br>naveen@rjkexim.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
-                  <p>+91 8779632582 <br>+91 8779632582</p>
+                  <p>&nbsp; <br>+91 8779632582</p>
                 </div>
               </div>
             </div>
@@ -107,25 +110,26 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="" method="post" role="form" class="php-email-form">
+            <form action="" id="contactForm" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" autocomplete="off" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" autocomplete="off" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" autocomplete="off" required></input>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" autocomplete="off" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message" autocomplete="off" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div id="response" class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -163,11 +167,11 @@
           <div class="col-lg-4 col-md-4 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              23/B, Mahalaxmi CHS<br>
-              Renuka Nagar, Kandiwali West<br>
-              Mumbai, India 400067<br><br>
+              23-B, Mahalaxmi CHS, Renuka Nagar, <br>
+              Near IBIS Tower, New Link Road, <br> 
+              Kandivali West, Mumbai 400067 <br> <br>
               <strong>Phone:</strong> +91 8779632582<br>
-              <strong>Email:</strong> naveen@gmail.com<br>
+              <strong>Email:</strong>naveen@rjkexim.com<br>
             </p>
           </div>
           <div class="col-lg-4 col-md-4 footer-info">
@@ -188,6 +192,9 @@
     </div>
 
     <div class="container">
+      <div class="d-flex pt-4 justify-content-center align-content-center">
+        <img src="./assets/img/fieo_certified.png" class="certification-img" alt="">
+      </div>
       <div class="copyright">
         &copy; Copyright <strong><span>RJK EXIM</span></strong>. All Rights Reserved
       </div>
@@ -200,11 +207,11 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets//js//main_firebase.js" type="module"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>

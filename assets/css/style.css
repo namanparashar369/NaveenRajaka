@@ -2293,3 +2293,14 @@ section {
 #footer .credits a {
   color: #a2cce3;
 }
+
+.outlined-img {
+  outline: 2px solid #68A4C4;
+  outline-offset: 2px;
+  transition: 0.175s all ease-in-out;
+}
+
+.certification-img {
+  width: 150px;
+  height: auto;
+}
